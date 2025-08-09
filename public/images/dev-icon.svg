@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="149.99998mm"
+   height="150mm"
+   viewBox="0 0 149.99998 150"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="dev-icon.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   inkscape:export-filename="dev-icon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.5628056"
+     inkscape:cx="283.46457"
+     inkscape:cy="278.34557"
+     inkscape:window-width="1920"
+     inkscape:window-height="1130"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="266.05997"
+       y="780.44257"
+       width="243.25484"
+       height="206.51321"
+       id="rect6" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-5.1965239,0.10881976)">
+    <text
+       xml:space="preserve"
+       transform="matrix(6.4690027,0,0,6.6852368,-1723.2275,-5255.2664)"
+       id="text6"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:Constantia;-inkscape-font-specification:Constantia;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect6);display:inline;fill:#0055d4"
+       x="0"
+       y="0"><tspan
+         x="266.06055"
+         y="808.47461"
+         id="tspan4">Ω</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32.2058px;font-family:Georgia;-inkscape-font-specification:'Georgia Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#8800aa;stroke-width:0.603855"
+       x="140.17412"
+       y="45.667255"
+       id="text2"
+       transform="scale(0.57349507,1.7436942)"><tspan
+         id="tspan2"
+         x="140.17412"
+         y="45.667255"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Georgia;-inkscape-font-specification:'Georgia Bold';text-align:center;text-anchor:middle;fill:#8800aa;stroke-width:0.603855" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9167px;font-family:Constantia;-inkscape-font-specification:'Constantia Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#aa00d4;stroke-width:0.269076"
+       x="131.07854"
+       y="55.996613"
+       id="text3"
+       transform="scale(0.60544244,1.6516847)"><tspan
+         id="tspan3"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.9167px;font-family:Constantia;-inkscape-font-specification:'Constantia Bold';fill:#0096f2;fill-opacity:1;stroke-width:0.269076"
+         x="131.07854"
+         y="55.996613">DEV</tspan></text>
+  </g>
+</svg>
