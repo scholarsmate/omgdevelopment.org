@@ -28,7 +28,7 @@ export default function Header() {
           aria-label="Home"
           title="Home"
         >
-          <span className="font-semibold text-base sm:text-lg tracking-tight">Ω Dev</span>
+          <span className="font-semibold text-lg sm:text-xl tracking-tight">Ω Dev</span>
         </Link>
         <Link
           href="/solutions/omega-match"
