@@ -1,4 +1,4 @@
-# OmgDevelopment.org
+# [OmgDevelopment.org](https://omgedevelopment.org)
 
 [![Sync Marketing Content](https://github.com/scholarsmate/omgdevelopment.org/actions/workflows/sync-marketing.yml/badge.svg)](https://github.com/scholarsmate/omgdevelopment.org/actions/workflows/sync-marketing.yml)
 [![Lint](https://github.com/scholarsmate/omgdevelopment.org/actions/workflows/lint.yml/badge.svg)](https://github.com/scholarsmate/omgdevelopment.org/actions/workflows/lint.yml)
