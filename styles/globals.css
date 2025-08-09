@@ -1,6 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config "../tailwind.config.js";
+@import "tailwindcss";
+/*
+	Tailwind v4 custom dark variant:
+	- Declares a variant named "dark" that scopes styles to the `.dark` class on <html>
+		and all of its descendants using :where(.dark, .dark *).
+	- This enables utilities like `dark:prose-invert` or `dark:bg-gray-900` to compile
+		correctly under our class-based dark mode strategy.
+	- The `.dark` class is toggled pre-paint in app/layout.tsx to avoid FOUC.
+*/
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* Prevent layout shift when the vertical scrollbar appears/disappears */
 :root {

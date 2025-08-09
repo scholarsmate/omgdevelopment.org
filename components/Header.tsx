@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 export default function Header() {
   const pathname = usePathname()
   const base =
-    'inline-flex items-center px-2.5 py-1.5 rounded-md font-medium text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:underline underline-offset-4 decoration-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/50 transition-colors'
+  'inline-flex items-center px-2.5 py-1.5 rounded-md font-medium text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:underline underline-offset-4 decoration-2 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-500/50 transition-colors'
   const active = 'text-blue-700 dark:text-blue-300 bg-gray-100 dark:bg-gray-800'
   const isActive = (href: string) => pathname === href
 
