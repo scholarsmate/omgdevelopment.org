@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config "../tailwind.config.js";
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* Prevent layout shift when the vertical scrollbar appears/disappears */
 :root {
