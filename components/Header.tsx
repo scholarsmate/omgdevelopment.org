@@ -48,23 +48,23 @@ export default function Header() {
           Home
         </Link>
         <Link
-          href="/marketing/omega-match"
-          className={`${base} ${isActive('/marketing/omega-match') ? active : ''}`}
-          aria-current={isActive('/marketing/omega-match') ? 'page' : undefined}
+          href="/solutions/omega-match"
+          className={`${base} ${isActive('/solutions/omega-match') ? active : ''}`}
+          aria-current={isActive('/solutions/omega-match') ? 'page' : undefined}
         >
           OmegaMatch
         </Link>
         <Link
-          href="/marketing/omega-omg"
-          className={`${base} ${isActive('/marketing/omega-omg') ? active : ''}`}
-          aria-current={isActive('/marketing/omega-omg') ? 'page' : undefined}
+          href="/solutions/omega-omg"
+          className={`${base} ${isActive('/solutions/omega-omg') ? active : ''}`}
+          aria-current={isActive('/solutions/omega-omg') ? 'page' : undefined}
         >
           OmegaOMG
         </Link>
         <Link
-          href="/marketing/omega-omg-vscode"
-          className={`${base} ${isActive('/marketing/omega-omg-vscode') ? active : ''}`}
-          aria-current={isActive('/marketing/omega-omg-vscode') ? 'page' : undefined}
+          href="/solutions/omega-omg-vscode"
+          className={`${base} ${isActive('/solutions/omega-omg-vscode') ? active : ''}`}
+          aria-current={isActive('/solutions/omega-omg-vscode') ? 'page' : undefined}
         >
           OmegaOMG-VSCode
         </Link>

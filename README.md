@@ -23,7 +23,7 @@ OmgDevelopment.org is a modern web application built with Next.js and Tailwind C
 ## Project Structure
 - `app/` — App Router pages and layouts
    - `head.tsx`, `layout.tsx`, `page.tsx`, `not-found.tsx`
-   - `marketing/` — build-time rendered marketing pages
+   - `solutions/` — build-time rendered pages sourced from upstream MARKETING.md
       - `omega-omg/`, `omega-omg-vscode/`, `omega-match/`
    - Note: Legacy `about/` and `contact/` pages were removed.
 - `components/` — UI components (e.g., `Header.tsx`, `ThemeToggle.tsx`)
@@ -50,7 +50,7 @@ OmgDevelopment.org is a modern web application built with Next.js and Tailwind C
    ```
 3. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
 
-#### Pull marketing content (MARKETING.md)
+#### Pull solutions content (MARKETING.md)
 - Host (PowerShell):
    ```powershell
    $env:OMG_OWNER = "scholarsmate"
@@ -62,12 +62,12 @@ OmgDevelopment.org is a modern web application built with Next.js and Tailwind C
    ```
 
 - View pages:
-   - /marketing/omega-omg
-   - /marketing/omega-omg-vscode
-   - /marketing/omega-match
+   - /solutions/omega-omg
+   - /solutions/omega-omg-vscode
+   - /solutions/omega-match
 
 Notes:
-- The marketing pages are statically pre-rendered. After syncing content, rebuild to see updates locally or deploy to update production.
+- The solutions pages are statically pre-rendered. After syncing content, rebuild to see updates locally or deploy to update production.
 - GitHub Actions also runs a scheduled/manual sync and writes `content/LAST_SYNC.md`.
 
 #### For Fast Local Development
@@ -119,7 +119,7 @@ NEXT_PUBLIC_SITE_URL=https://omgdevelopment.org
    # (Optional) Generate PNG icons and OG image from the SVG
    npm run icons
 
-   # (Optional) Sync marketing content from upstream repos
+   # (Optional) Sync solutions content from upstream repos
    $env:OMG_OWNER = "scholarsmate"
    npm run fetch:marketing
 

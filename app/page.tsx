@@ -30,7 +30,7 @@ export default function Home() {
           <article className="relative rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg transition-all duration-200 transform-gpu hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800/60 focus-within:ring-2 focus-within:ring-blue-500/40 motion-reduce:transform-none motion-reduce:transition-none">
             <span className="absolute top-3 right-3 inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur px-2 py-0.5 text-[11px] font-medium text-gray-700 dark:text-gray-300">Apache-2.0</span>
             <h3 className="text-xl font-semibold">
-              <Link href="/marketing/omega-match" className="hover:underline">OmegaMatch</Link>
+              <Link href="/solutions/omega-match" className="hover:underline">OmegaMatch</Link>
             </h3>
             <p className="mt-2 text-gray-700 dark:text-gray-300">
               High‑throughput multi‑pattern text matching engine. Exact, deterministic, and
@@ -38,7 +38,7 @@ export default function Home() {
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                href="/marketing/omega-match"
+                href="/solutions/omega-match"
                 className="inline-flex items-center gap-2 rounded-md bg-blue-600 text-white px-3 py-1.5 text-sm font-medium hover:bg-blue-500 dark:bg-blue-600 dark:hover:bg-blue-500 transition-colors"
               >
                 Learn more
@@ -67,7 +67,7 @@ export default function Home() {
           <article className="relative rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg transition-all duration-200 transform-gpu hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800/60 focus-within:ring-2 focus-within:ring-blue-500/40 motion-reduce:transform-none motion-reduce:transition-none">
             <span className="absolute top-3 right-3 inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur px-2 py-0.5 text-[11px] font-medium text-gray-700 dark:text-gray-300">Apache-2.0</span>
             <h3 className="text-xl font-semibold">
-              <Link href="/marketing/omega-omg" className="hover:underline">OmegaOMG</Link>
+              <Link href="/solutions/omega-omg" className="hover:underline">OmegaOMG</Link>
             </h3>
             <p className="mt-2 text-gray-700 dark:text-gray-300">
               High‑precision entity extraction powered by a simple regex-like DSL and a fast evaluator,
@@ -75,7 +75,7 @@ export default function Home() {
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                href="/marketing/omega-omg"
+                href="/solutions/omega-omg"
                 className="inline-flex items-center gap-2 rounded-md bg-blue-600 text-white px-3 py-1.5 text-sm font-medium hover:bg-blue-500 dark:bg-blue-600 dark:hover:bg-blue-500 transition-colors"
               >
                 Learn more
@@ -104,7 +104,7 @@ export default function Home() {
           <article className="relative rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg transition-all duration-200 transform-gpu hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800/60 focus-within:ring-2 focus-within:ring-blue-500/40 motion-reduce:transform-none motion-reduce:transition-none">
             <span className="absolute top-3 right-3 inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur px-2 py-0.5 text-[11px] font-medium text-gray-700 dark:text-gray-300">MIT</span>
             <h3 className="text-xl font-semibold">
-              <Link href="/marketing/omega-omg-vscode" className="hover:underline">OmegaOMG for VS Code</Link>
+              <Link href="/solutions/omega-omg-vscode" className="hover:underline">OmegaOMG for VS Code</Link>
             </h3>
             <p className="mt-2 text-gray-700 dark:text-gray-300">
               Language support extension for authoring OMG files with syntax highlighting,
@@ -112,7 +112,7 @@ export default function Home() {
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                href="/marketing/omega-omg-vscode"
+                href="/solutions/omega-omg-vscode"
                 className="inline-flex items-center gap-2 rounded-md bg-blue-600 text-white px-3 py-1.5 text-sm font-medium hover:bg-blue-500 dark:bg-blue-600 dark:hover:bg-blue-500 transition-colors"
               >
                 Learn more

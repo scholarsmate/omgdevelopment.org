@@ -13,7 +13,7 @@ export default function NotFound() {
           Go home
         </Link>
         <Link
-          href="/marketing"
+          href="/solutions"
           className="inline-flex items-center gap-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 px-3 py-1.5 text-sm font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
         >
           Explore projects
