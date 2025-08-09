@@ -40,14 +40,14 @@ jobs:
 
       - name: Fetch marketing content
         env:
-          OMG_OWNER: ${{ inputs.owner || 'scholarsmate' }}
-          OMG_BRANCH: ${{ inputs.branch || 'main' }}
+          OMG_OWNER: ${{ github.event_name == 'workflow_dispatch' && inputs.owner || 'scholarsmate' }}
+          OMG_BRANCH: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || 'main' }}
         run: |
           node scripts/fetch-marketing.mjs
 
       - name: Commit and push changes (force optional)
         env:
-          FORCE_COMMIT: ${{ inputs.force || 'false' }}
+          FORCE_COMMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.force || 'false' }}
         run: |
           CHANGED_COUNT=$(git status --porcelain content | wc -l)
           echo "Detected changes in content/: ${CHANGED_COUNT}"
