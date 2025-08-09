@@ -30,6 +30,7 @@ export default function Header() {
         >
           <span className="font-semibold text-lg sm:text-xl tracking-tight">Ω Dev</span>
         </Link>
+  <span aria-hidden="true" className="mx-2 text-blue-700 dark:text-blue-300 select-none">:</span>
         <Link
           href="/solutions/omega-match"
           className={`${base} ${isActive('/solutions/omega-match') ? active : ''}`}
