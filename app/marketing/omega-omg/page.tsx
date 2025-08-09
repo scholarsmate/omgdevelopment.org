@@ -1,4 +1,4 @@
-import OmegaOMG from '../../content/omega-omg/MARKETING.md';
+import OmegaOMG from '../../../content/omega-omg/MARKETING.md';
 
 export default function Page() {
   // Render as-is; MDX loader will convert to a React component
