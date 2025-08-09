@@ -24,15 +24,15 @@ export default function Header() {
       >
         <Link
           href="/"
-          className={`${base} ${isActive('/') ? active : ''}`}
+          className={`${base} ${isActive('/') ? active : ''} p-1.5 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md`}
           aria-current={isActive('/') ? 'page' : undefined}
           aria-label="Home"
         >
           <Image
             src="/images/dev-icon-32.png"
             alt=""
-            width={20}
-            height={20}
+            width={24}
+            height={24}
             priority
           />
         </Link>
