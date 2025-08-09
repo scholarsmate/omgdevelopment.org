@@ -7,7 +7,7 @@ export default function Home() {
       <section className="pt-6 md:pt-10 pb-2 md:pb-4 text-center space-y-4 animate-in fade-in slide-in-from-top-1 duration-500">
         <div className="flex justify-center animate-in fade-in-50 duration-700">
           <Image
-            src="/images/dev-icon.svg"
+            src="/images/dev-icon-512.png"
             alt="OMG Development icon"
             width={112}
             height={112}

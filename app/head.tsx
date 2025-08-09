@@ -7,7 +7,9 @@ export default function Head() {
         content="OMG Development creates world‑class, free and open‑source software: OmegaMatch (high‑throughput multi‑pattern matcher), OmegaOMG (entity extraction DSL), and the OmegaOMG VS Code extension."
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/images/dev-icon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/images/dev-icon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="/images/dev-icon-192.png" sizes="192x192" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/dev-icon-180.png" sizes="180x180" />
       <meta name="theme-color" content="#0b66c3" />
       <meta name="theme-color" content="#0b66c3" media="(prefers-color-scheme: light)" />
       <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)" />
@@ -20,7 +22,9 @@ export default function Head() {
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://omgdevelopment.org/" />
-      <meta property="og:image" content="https://omgdevelopment.org/images/dev-icon.svg" />
+  <meta property="og:image" content="https://omgdevelopment.org/images/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -29,7 +33,7 @@ export default function Head() {
         name="twitter:description"
         content="OmegaMatch, OmegaOMG, and the OmegaOMG VS Code extension — open tools that are elegant, efficient, and solve real‑world problems."
       />
-      <meta name="twitter:image" content="https://omgdevelopment.org/images/dev-icon.svg" />
+  <meta name="twitter:image" content="https://omgdevelopment.org/images/og.png" />
     </>
   )
 }
