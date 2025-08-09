@@ -8,7 +8,7 @@
 Product site for Omega suite of Free and Open Source solutions with light/dark mode and mobile-friendly navigation.
 
 ## Overview
-OmgDevelopment.org is a modern web application built with Next.js and Tailwind CSS. It serves as the mobile-friendly product site for OmegaMatch, OmegaOMG, and the OmegaOMG VS Code extension, providing clear navigation and a responsive UX with light/dark themes.
+OmgDevelopment.org is a modern web application built with Next.js and Tailwind CSS. It serves as the mobile-friendly product site for [OmegaMatch](https://github.com/scholarsmate/omega-match), [OmegaOMG](https://github.com/scholarsmate/omega-omg), and the [OmegaOMG VS Code extension](https://github.com/scholarsmate/omega-omg-vscode), providing clear navigation and a responsive UX with light/dark themes.
 
 ## Features
 - **Next.js App Router**: Modern routing and file-based layouts.
@@ -25,7 +25,6 @@ OmgDevelopment.org is a modern web application built with Next.js and Tailwind C
    - `head.tsx`, `layout.tsx`, `page.tsx`, `not-found.tsx`
    - `solutions/` — build-time rendered pages sourced from upstream MARKETING.md
       - `omega-omg/`, `omega-omg-vscode/`, `omega-match/`
-   - Note: Legacy `about/` and `contact/` pages were removed.
 - `components/` — UI components (e.g., `Header.tsx`, `ThemeToggle.tsx`)
 - `content/` — synced markdown from upstream repos and `LAST_SYNC.md`
 - `scripts/` — automation scripts (e.g., `fetch-marketing.mjs`, `rasterize-icon.mjs`)
@@ -143,10 +142,10 @@ NEXT_PUBLIC_SITE_URL=https://omgdevelopment.org
       npm run build
       ```
 
-   - Marketing page content lives in the upstream repos; update those MARKETING.md files there. This site pulls them in via the sync script or scheduled workflow.
+   - Solutions page content lives in the upstream repos; update those MARKETING.md files there. This site pulls them in via the sync script or scheduled workflow.
 
 ## Deployment
 This project is configured for Vercel. Preview deployments are triggered automatically on pull requests.
 
 ## License
-MIT
+[MIT](https://opensource.org/licenses/MIT)
