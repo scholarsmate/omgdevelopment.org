@@ -17,7 +17,7 @@ on:
       force:
         description: 'Force a commit even if no content changed (also updates timestamp)'
         required: false
-        default: 'false'
+  default: 'true'
 
 permissions:
   contents: write
