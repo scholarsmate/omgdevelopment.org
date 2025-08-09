@@ -9,7 +9,7 @@ export default function Header() {
         <Link href="/">Home</Link>
   <Link href="/marketing/omega-match">OmegaMatch</Link>
   <Link href="/marketing/omega-omg">OmegaOMG</Link>
-        <Link href="/marketing">Marketing</Link>
+  <Link href="/marketing/omega-omg-vscode">OmegaOMG-VSCode</Link>
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
       </nav>

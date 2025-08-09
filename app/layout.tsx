@@ -6,9 +6,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <Head />
-      <body className="bg-white text-black dark:bg-gray-900 dark:text-white prose dark:prose-invert p-4">
-        <Header />
-        {children}
+      <body className="bg-white text-black dark:bg-gray-900 dark:text-white antialiased">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   )

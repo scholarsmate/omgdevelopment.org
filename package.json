@@ -12,6 +12,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "@mdx-js/react": "^2.3.0",
     "@mdx-js/loader": "^2.3.0",
+  "remark-gfm": "^4.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
   "next": "^13.5.11"

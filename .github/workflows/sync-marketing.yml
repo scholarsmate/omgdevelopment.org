@@ -14,6 +14,10 @@ on:
         description: 'Branch to fetch from'
         required: false
         default: 'main'
+      force:
+        description: 'Force a commit even if no content changed (also updates timestamp)'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
@@ -41,14 +45,22 @@ jobs:
         run: |
           node scripts/fetch-marketing.mjs
 
-      - name: Commit and push changes (if any)
+      - name: Commit and push changes (force optional)
+        env:
+          FORCE_COMMIT: ${{ inputs.force || 'false' }}
         run: |
-          if [[ -n "$(git status --porcelain content)" ]]; then
+          CHANGED_COUNT=$(git status --porcelain content | wc -l)
+          echo "Detected changes in content/: ${CHANGED_COUNT}"
+          echo "FORCE_COMMIT=${FORCE_COMMIT}"
+          if [[ "${FORCE_COMMIT}" == "true" || ${CHANGED_COUNT} -gt 0 ]]; then
+            mkdir -p content
+            TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+            echo "Last marketing sync: ${TS}" > content/LAST_SYNC.md
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add content
-            git commit -m "chore(marketing): sync MARKETING.md from upstream repos"
-            git push
+            git commit -m "chore(marketing): sync at ${TS} (force=${FORCE_COMMIT}, changes=${CHANGED_COUNT})" || echo "Nothing to commit"
+            git push || echo "Nothing to push"
           else
-            echo "No changes to commit."
+            echo "No changes and not forced; skipping commit."
           fi

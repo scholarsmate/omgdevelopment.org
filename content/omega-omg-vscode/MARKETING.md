@@ -1,6 +1,6 @@
 # OmegaOMG Language Support for VS Code
 
-![OMG in VS Code – syntax highlighting, hovers, and diagnostics](images/OMG-VSCode.png)
+![OMG in VS Code – syntax highlighting, hovers, and diagnostics](https://raw.githubusercontent.com/scholarsmate/omega-omg-vscode/main/images/OMG-VSCode.png)
 
 Empower domain pattern authors and data engineers with fast, reliable authoring of Omega Object Matching Grammar (OMG) files directly inside Visual Studio Code. The OmegaOMG Language Support extension turns raw pattern text into a productive, validated, navigable editing experience.
 
