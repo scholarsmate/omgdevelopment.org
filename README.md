@@ -4,7 +4,7 @@
 [![Vercel Deploy](https://img.shields.io/github/deployments/scholarsmate/omgdevelopment.org/Production?label=vercel&logo=vercel&logoColor=white)](https://github.com/scholarsmate/omgdevelopment.org/deployments)
 [![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fomgdevelopment.org&label=omgdevelopment.org&logo=vercel&logoColor=white)](https://omgdevelopment.org)
 
-Product site for OmegaMatch and OmegaOMG with dark mode support and navigation.
+Product site for Omega suite of Free and Open Source solutions with light/dark mode support and mobile-friendly navigation.
 
 ## Overview
 OmgDevelopment.org is a modern web application built with Next.js and Tailwind CSS. It serves as the product site for OmegaMatch, OmegaOMG, and OmegaOMG extenstion for VSCode providing information, navigation, and a responsive user experience with support for both light and dark themes.
