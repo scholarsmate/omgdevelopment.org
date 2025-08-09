@@ -10,17 +10,26 @@ Product site for OmegaMatch and OmegaOMG with dark mode support and navigation.
 OmgDevelopment.org is a modern web application built with Next.js and Tailwind CSS. It serves as the product site for OmegaMatch and OmegaOMG, providing information, navigation, and a responsive user experience with support for both light and dark themes.
 
 ## Features
-- **Next.js 13 App Router**: Utilizes the latest Next.js features for fast, scalable, and maintainable development.
+- **Next.js App Router**: Modern routing and data fetching.
 - **Tailwind CSS**: Rapid UI development with utility-first CSS and custom theming.
 - **Dark Mode**: Toggle between light and dark themes with persistent user preference.
 - **Responsive Design**: Mobile-friendly layout and navigation.
-- **MDX Support**: Easily add rich content using MDX (Markdown + JSX).
+- **Build-time Markdown Rendering**: Product marketing content is fetched from upstream repos and rendered at build time using `react-markdown` + `remark-gfm` (no MDX runtime).
 - **Vercel Deployment**: Optimized for seamless deployment and preview environments on Vercel.
 
 ## Project Structure
-- `/app` — Main application pages (Home, About, Contact, Match, OMG)
-- `/components` — Reusable UI components (Header, ThemeToggle)
-- `/styles` — Global and Tailwind CSS styles
+- `app/` — App Router pages and layouts
+   - `head.tsx`, `layout.tsx`, `page.tsx`
+   - `about/`, `contact/` — static pages
+   - `marketing/` — build-time rendered marketing pages
+      - `omega-omg/`, `omega-omg-vscode/`, `omega-match/`
+- `components/` — UI components (e.g., `Header.tsx`, `ThemeToggle.tsx`)
+- `content/` — synced markdown from upstream repos and `LAST_SYNC.md`
+- `scripts/` — automation scripts (e.g., `fetch-marketing.mjs`)
+- `styles/` — global styles including Tailwind (`globals.css`)
+- `public/` — static assets
+- `Dockerfile`, `docker-compose.yml` — prod image and dev workflow
+- `.github/workflows/` — automation (content sync, lint/build)
 
 ## Getting Started
 
@@ -52,6 +61,10 @@ OmgDevelopment.org is a modern web application built with Next.js and Tailwind C
    - /marketing/omega-omg
    - /marketing/omega-omg-vscode
    - /marketing/omega-match
+
+Notes:
+- The marketing pages are statically pre-rendered. After syncing content, rebuild to see updates locally or deploy to update production.
+- GitHub Actions also runs a scheduled/manual sync and writes `content/LAST_SYNC.md`. The About page surfaces this timestamp.
 
 #### For Fast Local Development
 1. **Start the dev container with live reload:**

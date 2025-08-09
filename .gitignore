@@ -1,3 +1,6 @@
+app/mdx-components.tsx
+mdx.d.ts
+types/mdx.d.ts
 node_modules
 .next
 out
