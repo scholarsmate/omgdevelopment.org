@@ -1,17 +1,12 @@
-name: Vercel Preview
+# This workflow was removed. Vercel GitHub App handles preview deployments.
+name: (Removed) Vercel Preview
 
-on: [pull_request]
+on:
+  # Manual only; does not run on PRs or pushes
+  workflow_dispatch:
 
 jobs:
-  preview:
+  skip:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Trigger Vercel Preview Deployment
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod=false'
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo "Vercel Preview workflow removed; use Vercel GitHub App deployments."
