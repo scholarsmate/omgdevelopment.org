@@ -17,10 +17,10 @@ export default function Home() {
         </div>
   <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight animate-in fade-in duration-700 delay-75">OMG Development</h1>
   <p className="mx-auto max-w-3xl text-lg md:text-2xl text-gray-700 dark:text-gray-300 animate-in fade-in duration-700 delay-100">
-          Our mission is to create <strong className="font-semibold text-gray-900 dark:text-white">world‑class, free and open‑source</strong> software that is
+          Our mission is to create <strong className="font-semibold text-gray-900 dark:text-white">world‑class, free and open‑source</strong> solutions that are
           <span className="font-semibold"> elegant</span>,
           <span className="font-semibold"> efficient</span>, and
-          <span className="font-semibold"> solves real‑world problems</span>.
+          <span className="font-semibold"> solve real‑world problems</span>.
         </p>
       </section>
 

@@ -7,7 +7,7 @@
 Product site for OmegaMatch and OmegaOMG with dark mode support and navigation.
 
 ## Overview
-OmgDevelopment.org is a modern web application built with Next.js and Tailwind CSS. It serves as the product site for OmegaMatch and OmegaOMG, providing information, navigation, and a responsive user experience with support for both light and dark themes.
+OmgDevelopment.org is a modern web application built with Next.js and Tailwind CSS. It serves as the product site for OmegaMatch, OmegaOMG, and OmegaOMG extenstion for VSCode providing information, navigation, and a responsive user experience with support for both light and dark themes.
 
 ## Features
 - **Next.js App Router**: Modern routing and data fetching.
