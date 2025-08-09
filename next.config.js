@@ -1,11 +1,4 @@
-const remarkGfm = require('remark-gfm');
-const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [remarkGfm],
-  },
-});
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-module.exports = withMDX({
-  pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
-});
+module.exports = nextConfig;
