@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import ThemeToggle from './ThemeToggle'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
 
 export default function Header() {
   const pathname = usePathname()
@@ -25,8 +26,15 @@ export default function Header() {
           href="/"
           className={`${base} ${isActive('/') ? active : ''}`}
           aria-current={isActive('/') ? 'page' : undefined}
+          aria-label="Home"
         >
-          Home
+          <Image
+            src="/images/dev-icon-32.png"
+            alt=""
+            width={20}
+            height={20}
+            priority
+          />
         </Link>
         <Link
           href="/solutions/omega-match"
