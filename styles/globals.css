@@ -31,3 +31,11 @@
 .duration-700 { animation-duration: 700ms; }
 .delay-75 { animation-delay: 75ms; }
 .delay-100 { animation-delay: 100ms; }
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	* { scroll-behavior: auto !important; }
+	.animate-in, .fade-in, .fade-in-50, .slide-in-from-top-1 {
+		animation: none !important;
+	}
+}

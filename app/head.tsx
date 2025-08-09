@@ -22,6 +22,8 @@ export default function Head() {
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://omgdevelopment.org/" />
+      <link rel="canonical" href="https://omgdevelopment.org/" />
+      <meta property="og:site_name" content="OMG Development" />
   <meta property="og:image" content="https://omgdevelopment.org/images/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
