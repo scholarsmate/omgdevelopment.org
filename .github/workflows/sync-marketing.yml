@@ -40,7 +40,7 @@ jobs:
           OMG_OWNER: ${{ github.event_name == 'workflow_dispatch' && inputs.owner || 'scholarsmate' }}
           OMG_BRANCH: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || 'main' }}
         run: |
-          node scripts/fetch-marketing.mjs
+          npx tsx scripts/fetch-marketing.ts
 
       - name: Commit and push changes (force optional)
         env:

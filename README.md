@@ -27,7 +27,7 @@ OmgDevelopment.org is a modern web application built with Next.js and Tailwind C
       - `omega-omg/`, `omega-omg-vscode/`, `omega-match/`
 - `components/` — UI components (e.g., `Header.tsx`, `ThemeToggle.tsx`)
 - `content/` — synced markdown from upstream repos and `LAST_SYNC.md`
-- `scripts/` — automation scripts (e.g., `fetch-marketing.mjs`, `rasterize-icon.mjs`)
+- `scripts/` — automation scripts (e.g., `fetch-marketing.ts`, `rasterize-icon.ts`)
 - `styles/` — global styles including Tailwind (`globals.css`)
 - `public/` — static assets (favicons, social image, robots/sitemap)
    - `images/dev-icon.svg`, `images/dev-icon-*.png`, `images/og.png`
@@ -57,7 +57,7 @@ OmgDevelopment.org is a modern web application built with Next.js and Tailwind C
    ```
 - Inside dev container:
    ```sh
-   docker-compose exec web sh -lc "OMG_OWNER=scholarsmate node scripts/fetch-marketing.mjs"
+   docker-compose exec web sh -lc "OMG_OWNER=scholarsmate npx tsx scripts/fetch-marketing.ts"
    ```
 
 - View pages:

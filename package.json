@@ -3,8 +3,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fetch:marketing": "node scripts/fetch-marketing.mjs",
-    "icons": "node scripts/rasterize-icon.mjs"
+    "fetch:marketing": "tsx scripts/fetch-marketing.ts",
+    "icons": "tsx scripts/rasterize-icon.ts"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
@@ -22,6 +22,7 @@
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "tsx": "^4.20.3",
     "typescript": "^5.0.0"
   }
 }
