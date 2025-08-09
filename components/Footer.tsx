@@ -1,8 +1,10 @@
 export default function Footer() {
+  const year = new Date().getFullYear()
   return (
     <footer className="mt-10 border-t pt-6 text-sm text-gray-600 dark:text-gray-400">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <p>
+          © {year} OmgDevelopment.org ·{' '}
           Licensed under{' '}
           <a
             href="https://opensource.org/licenses/MIT"
