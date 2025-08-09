@@ -1,5 +1,9 @@
 # OmgDevelopment.org
 
+[![Sync Marketing Content](https://github.com/scholarsmate/omgdevelopment.org/actions/workflows/sync-marketing.yml/badge.svg)](https://github.com/scholarsmate/omgdevelopment.org/actions/workflows/sync-marketing.yml)
+[![Vercel Deploy](https://img.shields.io/github/deployments/scholarsmate/omgdevelopment.org/Production?label=vercel&logo=vercel&logoColor=white)](https://github.com/scholarsmate/omgdevelopment.org/deployments)
+[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fomgdevelopment.org&label=omgdevelopment.org&logo=vercel&logoColor=white)](https://omgdevelopment.org)
+
 Product site for OmegaMatch and OmegaOMG with dark mode support and navigation.
 
 ## Overview
@@ -32,6 +36,22 @@ OmgDevelopment.org is a modern web application built with Next.js and Tailwind C
    docker run --rm -p 3000:3000 omgdevelopment
    ```
 3. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
+
+#### Pull marketing content (MARKETING.md)
+- Host (PowerShell):
+   ```powershell
+   $env:OMG_OWNER = "scholarsmate"
+   npm run fetch:marketing
+   ```
+- Inside dev container:
+   ```sh
+   docker-compose exec web sh -lc "OMG_OWNER=scholarsmate node scripts/fetch-marketing.mjs"
+   ```
+
+- View pages:
+   - /marketing/omega-omg
+   - /marketing/omega-omg-vscode
+   - /marketing/omega-match
 
 #### For Fast Local Development
 1. **Start the dev container with live reload:**

@@ -1,8 +1,8 @@
 module.exports = {
-  pageExtensions: ['ts', 'tsx', 'mdx'],
+  pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
   webpack(config, options) {
     config.module.rules.push({
-      test: /\.mdx$/,
+      test: /\.mdx?$/,
       use: [
         options.defaultLoaders.babel,
         {
