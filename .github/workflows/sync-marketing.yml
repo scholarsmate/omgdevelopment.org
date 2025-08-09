@@ -8,16 +8,13 @@ on:
     inputs:
       owner:
         description: 'GitHub owner/org of the source repositories'
-        required: false
         default: 'scholarsmate'
       branch:
         description: 'Branch to fetch from'
-        required: false
         default: 'main'
       force:
         description: 'Force a commit even if no content changed (also updates timestamp)'
-        required: false
-  default: 'true'
+        default: 'true'
 
 permissions:
   contents: write
@@ -47,7 +44,7 @@ jobs:
 
       - name: Commit and push changes (force optional)
         env:
-          FORCE_COMMIT: ${{ github.event_name == 'workflow_dispatch' && inputs.force || 'false' }}
+          FORCE_COMMIT: ${{ github.event_name == 'workflow_dispatch' && (inputs.force || 'true') || 'false' }}
         run: |
           CHANGED_COUNT=$(git status --porcelain content | wc -l)
           echo "Detected changes in content/: ${CHANGED_COUNT}"
