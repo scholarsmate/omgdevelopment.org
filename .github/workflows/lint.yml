@@ -13,8 +13,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm'
       - name: Install dependencies
         run: npm ci || npm install
+      - name: ESLint
+        run: npx next lint --no-cache
       - name: Type check
         run: npx tsc --noEmit
       - name: Next build (dry check)
