@@ -27,7 +27,8 @@ export default function Home() {
   <section className="space-y-6">
         <h2 className="text-2xl font-semibold">Explore our projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <article className="rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg transition-all duration-200 transform-gpu hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800/60 focus-within:ring-2 focus-within:ring-blue-500/40 motion-reduce:transform-none motion-reduce:transition-none">
+          <article className="relative rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg transition-all duration-200 transform-gpu hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800/60 focus-within:ring-2 focus-within:ring-blue-500/40 motion-reduce:transform-none motion-reduce:transition-none">
+            <span className="absolute top-3 right-3 inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur px-2 py-0.5 text-[11px] font-medium text-gray-700 dark:text-gray-300">Apache-2.0</span>
             <h3 className="text-xl font-semibold">
               <Link href="/marketing/omega-match" className="hover:underline">OmegaMatch</Link>
             </h3>
@@ -63,12 +64,13 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg transition-all duration-200 transform-gpu hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800/60 focus-within:ring-2 focus-within:ring-blue-500/40 motion-reduce:transform-none motion-reduce:transition-none">
+          <article className="relative rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg transition-all duration-200 transform-gpu hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800/60 focus-within:ring-2 focus-within:ring-blue-500/40 motion-reduce:transform-none motion-reduce:transition-none">
+            <span className="absolute top-3 right-3 inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur px-2 py-0.5 text-[11px] font-medium text-gray-700 dark:text-gray-300">Apache-2.0</span>
             <h3 className="text-xl font-semibold">
               <Link href="/marketing/omega-omg" className="hover:underline">OmegaOMG</Link>
             </h3>
             <p className="mt-2 text-gray-700 dark:text-gray-300">
-              High‑precision entity extraction powered by a simple DSL and a fast evaluator,
+              High‑precision entity extraction powered by a simple regex-like DSL and a fast evaluator,
               built on OmegaMatch anchors with deterministic resolution and clean JSON output.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
@@ -99,7 +101,8 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg transition-all duration-200 transform-gpu hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800/60 focus-within:ring-2 focus-within:ring-blue-500/40 motion-reduce:transform-none motion-reduce:transition-none">
+          <article className="relative rounded-lg border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg transition-all duration-200 transform-gpu hover:-translate-y-0.5 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800/60 focus-within:ring-2 focus-within:ring-blue-500/40 motion-reduce:transform-none motion-reduce:transition-none">
+            <span className="absolute top-3 right-3 inline-flex items-center rounded-md border border-gray-300 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur px-2 py-0.5 text-[11px] font-medium text-gray-700 dark:text-gray-300">MIT</span>
             <h3 className="text-xl font-semibold">
               <Link href="/marketing/omega-omg-vscode" className="hover:underline">OmegaOMG for VS Code</Link>
             </h3>
