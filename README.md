@@ -103,6 +103,47 @@ Copy `.env.example` to `.env` and update as needed:
 NEXT_PUBLIC_SITE_URL=https://omgdevelopment.org
 ```
 
+   ## Local quickstart (Node.js)
+   If you prefer not to use Docker, you can run the app locally with Node.
+
+   Prerequisites:
+   - Node.js 18+ and npm 9+
+
+   Install and run:
+
+   ```powershell
+   # Install dependencies
+   npm ci
+
+   # (Optional) Generate PNG icons and OG image from the SVG
+   npm run icons
+
+   # (Optional) Sync marketing content from upstream repos
+   $env:OMG_OWNER = "scholarsmate"
+   npm run fetch:marketing
+
+   # Start local dev server
+   npm run dev
+
+   # Build production output
+   npm run build
+
+   # Start production server locally
+   npm start
+   ```
+
+   ## Contributing
+   - Issues and pull requests are welcome.
+   - Please branch from `main` and keep changes focused.
+   - Use clear commit messages (Conventional Commits style appreciated but not required).
+   - Before pushing, ensure the app builds:
+
+      ```powershell
+      npm run build
+      ```
+
+   - Marketing page content lives in the upstream repos; update those MARKETING.md files there. This site pulls them in via the sync script or scheduled workflow.
+
 ## Deployment
 This project is configured for Vercel. Preview deployments are triggered automatically on pull requests.
 
