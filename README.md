@@ -1,6 +1,7 @@
 # OmgDevelopment.org
 
 [![Sync Marketing Content](https://github.com/scholarsmate/omgdevelopment.org/actions/workflows/sync-marketing.yml/badge.svg)](https://github.com/scholarsmate/omgdevelopment.org/actions/workflows/sync-marketing.yml)
+[![Lint](https://github.com/scholarsmate/omgdevelopment.org/actions/workflows/lint.yml/badge.svg)](https://github.com/scholarsmate/omgdevelopment.org/actions/workflows/lint.yml)
 [![Vercel Deploy](https://img.shields.io/github/deployments/scholarsmate/omgdevelopment.org/Production?label=vercel&logo=vercel&logoColor=white)](https://github.com/scholarsmate/omgdevelopment.org/deployments)
 [![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fomgdevelopment.org&label=omgdevelopment.org&logo=vercel&logoColor=white)](https://omgdevelopment.org)
 
@@ -135,7 +136,7 @@ NEXT_PUBLIC_SITE_URL=https://omgdevelopment.org
    ## Contributing
    - Issues and pull requests are welcome.
    - Please branch from `main` and keep changes focused.
-   - Use clear commit messages (Conventional Commits style appreciated but not required).
+   - Use clear commit messages ([Conventional Commits](https://www.conventionalcommits.org/) style appreciated but not required).
    - Before pushing, ensure the app builds:
 
       ```powershell
